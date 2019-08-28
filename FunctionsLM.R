@@ -8,6 +8,12 @@
 generateY <- function(X, beta, sigma, seed = 5832652){
   #[ToDo] Set seed and generate Y following linear model
   set.seed(seed)
+  n = nrow(X)
+  epsilon = rnorm(n, 0, sigma^2)
+  
+  # generate Y using epsilon above: Y = X*beta + epsilon
+  Y = X%*%beta + epsilon
+  
   # Return Y
   return(Y)
 }
@@ -25,7 +31,7 @@ calculateBeta <- function(X, Y){
 # Calculate MSE
 calculateMSE <- function(beta, beta_LS){
   # calculate error: ||beta - beta_LS||_2^2
-  MSE = abs(beta - beta_LS)^2
+  MSE = sum(beta - beta_LS)^2 
   # Return MSE
   return(MSE)
 }
