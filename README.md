@@ -1,6 +1,6 @@
 # Assignment 1 - Getting started
 
-Student: *Last name*, *First name*
+Student: Shudde, Rachael
 
 Potentially helpful resources:
 
