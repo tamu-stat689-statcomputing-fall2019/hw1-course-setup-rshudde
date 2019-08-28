@@ -31,7 +31,9 @@ calculateBeta <- function(X, Y){
 # Calculate MSE
 calculateMSE <- function(beta, beta_LS){
   # calculate error: ||beta - beta_LS||_2^2
-  MSE = sum(beta - beta_LS)^2 
+  MSE = sum((beta - beta_LS)^2) 
   # Return MSE
   return(MSE)
 }
+
+## NOTE: I did help Asmita Roy figure out how to use git on this project 
