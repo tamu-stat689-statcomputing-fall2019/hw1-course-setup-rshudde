@@ -22,7 +22,7 @@ generateY <- function(X, beta, sigma, seed = 5832652){
 # Y -response
 calculateBeta <- function(X, Y){
   # calculate beta_LS using the least squares solution b = (X^TX)^(-1)X^Ty
-  beta_LS = solve((t(X) %*% X)) %*% t(X) %*% y
+  beta_LS = solve((t(X) %*% X)) %*% t(X) %*% Y
   return(beta_LS)
 }
 
