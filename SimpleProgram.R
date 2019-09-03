@@ -17,3 +17,4 @@ beta_LS = calculateBeta(X, Y)
 
 # [ToDo] Use calculateMSE to assess the estimation error measured by squared eucledian distance - ||beta - beta_LS||_2^2
 MSE = calculateMSE(beta, beta_LS)
+
