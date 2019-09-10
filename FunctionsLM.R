@@ -10,7 +10,7 @@ generateY <- function(X, beta, sigma, seed = 5832652){
   set.seed(seed)
   size_Y = nrow(X)
   # generate random epsilon
-  epsilon = rnorm(size_Y, 0, sigma^2)
+  epsilon = rnorm(size_Y, 0, sigma)
   
   # generate Y using epsilon above: Y = X*beta + epsilon
   Y = X%*%beta + epsilon
